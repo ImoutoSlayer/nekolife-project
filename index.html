@@ -76,10 +76,10 @@
     <header class="body">
 <video id="vid" volume"0.2" loop="" autoplay="" width="1920" height="1080">
         <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm">
-<!--		        <script>
+        <script>
         var video = document.currentScript.parentElement;
         video.volume = 0.2;
-        </script> -->
+        </script> 
 </video>
 
     <!-- About Section -->
@@ -162,13 +162,13 @@
     $(function(){
         $('#mute').click(function(){  
         	
-               if ($('#vid').attr('') = "")
+               if ($('#vid').attr('mute') = "")
                {
-                $('#vid').replaceWith('<video id="vid" muted="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"></video>');
-                };
+$('#vid').replaceWith('<h1>Why would you stop it, that was a great song >.</h1>')
+};
             else;
             {
-            $('#vid').replaceWith('<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"></video>');)
+$('#vid').replaceWith('<video id="vid" volume"0.2" loop="" autoplay="" width="1920" height="1080"><source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"></video>')
             };
     });
     });
