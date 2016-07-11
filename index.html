@@ -161,12 +161,12 @@
 <script>
     $(function(){
         $('#mute').click(function(){   
-               if video.volume == 0.2;
+               if ($('#vid').attr('mute') == "")
                {
-                video.volume = 0;
+                $('#vid').replaceWith("<video id="vid" muted="" loop="" autoplay="" width="1920" height="1080">");
             }
             else {
-                video.volume = 0.2;
+                $('#vid').replaceWith("<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080">");
             }
 
     });
