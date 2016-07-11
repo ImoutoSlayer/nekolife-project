@@ -159,18 +159,18 @@
 </div>
 </body>
 <script>
-    $(document).on('click', '#mute', function(e) {
-	e.preventDefault();
-	song.muted = true;
-	$(this).replaceWith('<a id="muted" href="javascript:void(0)" title="" position: fixed; ><i style="margin-right:10px;" class="fa fa-volume-off"></i></a>');
+    $(function(){
+        $('#mute').click(function(){   
+               if video.volume = 0.2
+               {
+               video.volume = 0
+            }
+            else {
+               video.volume = 0.2
+            }
 
-});
-
-$(document).on('click', '#muted', function(e) {
-	e.preventDefault();
-	song.muted = false;
-	$(this).replaceWith('<a id="mute" href="javascript:void(0)" title="" position: fixed; ><i class="fa fa-volume-up"></i></a>');
-});
+    });
+    });
 </script>
 
 </html>
