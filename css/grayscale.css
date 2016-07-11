@@ -222,12 +222,12 @@ a:focus {
 }
 #bgvid{
         position: fixed;
-        top:50%;
-        left:50%;
+        top:100%;
+        left:100%;
         min-width:100%;
         min-height:100%;
-        width:auto;
-        height:auto;
+        width:100%;
+        height:100%;
         z-index: -100;
         -webkit-transform: translateX(-50%) translateY(-50%);
 transform: translateX(-50%) translateY(-50%);
