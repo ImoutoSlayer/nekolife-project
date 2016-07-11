@@ -74,7 +74,7 @@
 
     <!-- Intro Header -->
     <header class="body">
-<video id="vid" mute="" volume="0.2" loop="" autoplay="" width="1920" height="1080">
+<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080">
         <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm">
 		        <script>
         var video = document.currentScript.parentElement;
@@ -161,12 +161,12 @@
 <script>
     $(function(){
         $('#mute').click(function(){   
-               if ($('#vid').attr('volume') == "0.2")
+               if ($('#vid').attr('mute') == "")
                {
-                $('#vid').replaceWith('<video id="vid" volume="0" loop="" autoplay="" width="1920" height="1080">');
+                $('#vid').replaceWith('<video id="vid" muted="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"> <script> var video = document.currentScript.parentElement; video.volume = 0.2;</script></video>');
             }
             else {
-                $('#vid').replaceWith('<video id="vid" volume="0.2" loop="" autoplay="" width="1920" height="1080">');
+                $('#vid').replaceWith($('#vid').replaceWith('<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"> <script> var video = document.currentScript.parentElement; video.volume = 0.2;</script></video>');
             }
 
     });
