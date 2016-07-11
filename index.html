@@ -159,8 +159,9 @@
 </div>
 </body>
 <script>
+    $(function(){
         $('#mute').click(function(){   
-               if ($('#vid').var('video.volume') = "0.2")
+               if ($('#vid').attr('mute') = "")
                {
                 $('#vid').replaceWith("<video id="vid" muted="" loop="" autoplay="" width="1920" height="1080">");
             }
