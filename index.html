@@ -165,8 +165,9 @@
                {
                 $('#vid').replaceWith('<video id="vid" muted="true" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"> <script> var video = document.currentScript.parentElement; video.volume = 0.2;</script></video>');
             }
-            else {
-                $('#vid').replaceWith($('#vid').replaceWith('<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"> <script> var video = document.currentScript.parentElement; video.volume = 0.2;</script></video>');
+            else
+            {
+                $('#vid').replaceWith('<video id="vid" muted="false" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"> <script> var video = document.currentScript.parentElement; video.volume = 0.2;</script></video>');
             }
 
     });
