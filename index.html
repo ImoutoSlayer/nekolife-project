@@ -74,12 +74,12 @@
 
     <!-- Intro Header -->
     <header class="body">
-<video id="vid" mute="" loop="" autoplay="" width="1920" height="1080">
+<video id="vid" volume"0.2" loop="" autoplay="" width="1920" height="1080">
         <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm">
-		        <script>
+<!--		        <script>
         var video = document.currentScript.parentElement;
         video.volume = 0.2;
-        </script>
+        </script> -->
 </video>
 
     <!-- About Section -->
@@ -162,7 +162,7 @@
     $(function(){
         $('#mute').click(function(){  
         	
-               if ($('#vid').attr('mute') == "")
+               if ($('#vid').attr('') = "")
                {
                 $('#vid').replaceWith('<video id="vid" muted="" loop="" autoplay="" width="1920" height="1080"> <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm"></video>');
                 };
