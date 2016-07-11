@@ -74,7 +74,7 @@
 
     <!-- Intro Header -->
     <header class="body">
-<video id="vid" volume="0.2" loop="" autoplay="" width="1920" height="1080">
+<video id="vid" muted="false" loop="" autoplay="" width="1920" height="1080">
         <source src="/img/IA-feat--Kagamine-RinSuper-Neko-WorldOriginal-song.webm" type="video/webm">
 		        <script>
         var video = document.currentScript.parentElement;
@@ -160,13 +160,13 @@
 </body>
 <script>
     $(function(){
-        $('#mute').click(function(){   
-               if ($('#vid').var('video.volume') == "0.2")
+        $('#mute').click(function(e){   
+               if document.getElementById('#vid').muted = false;
                {
-                $('#vid').var('video.volume', "0");
+                document.getElementById('#vid').muted = true;
             }
             else {
-                $('#vid').var('video.volume', "0.2");
+                document.getElementById('#vid').muted = false;
             }
 
     });
